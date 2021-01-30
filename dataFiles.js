@@ -23,11 +23,16 @@ const userName = document.getElementById("userName");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 
+
+
 contactForm.addEventListener("submit", handelsubmit);
 
 // handlle submit 
 function handelsubmit(Event){    
     Event.preventDefault();
+    
+    document.getElementById("loading").classList.add("showloading")
+
 let userNameValue = userName.value;
 let emailValue = email.value
 let messageValue = message.value
@@ -37,9 +42,22 @@ let messageValue = message.value
     username : ${emailValue} ..
     username : ${messageValue} ..`);
     // save message to database 
-    saveMessage(userNameValue, emailValue ,messageValue);
+    saveMessage(userNameValue, emailValue , messageValue);
+
+//  showing success 
+
+setTimeout(function(){ 
+    document.getElementById("loading").classList.remove("showloading");
+    document.getElementById("successful").classList.add("showsuccessful");
+    setTimeout(function(){ 
+        document.getElementById("successful").classList.remove("showsuccessful");  
+     }, 1000);
+ }, 1000);
+ 
+
     // clearing form after input is done 
-    // clearForm()
+    clearForm()
+    
 }
 
 // clear from after input 
@@ -48,6 +66,7 @@ function clearForm(){
     userName.value ='';
     email.value ='';
     message.value='';
+   
 }
 
 // save the message 
