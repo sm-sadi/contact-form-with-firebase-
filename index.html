@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+     <!-- Bootstrap CSS CDN -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+     <!-- <link rel="shortcut icon" href="./favicon 33.ico" type="image/x-icon"> -->
+      <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <section>
+        <h1 class="mx-auto text-center"> Contact</h1>
+        <div class="bg-dark p-1 w-50 mx-auto"> </div>
+
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col  shade ">
+                    <h5 class="display-5  mx-auto text-center"> Contact details </h5>
+                            <p class=""> Phone : +48 733787436</p>
+                            <p class=""> Email : sadi.wsiiz@gmail.com</p>
+                            <p class=""> Address : Rzeszów, Poland </p>
+                </div>
+                <!-- social links  -->
+                <div class="col shade  mx-auto text-center">
+                   <h5 class=""> Social Links</h5>
+                   <a class="text-primary px-1" target="_blank" href="https://github.com/sm-sadi">  
+                    <i class="fab fa-github-square    fa-3x "></i> 
+                  </a>
+                  <a class="text-primary px-1" target="_blank" href="https://pl.linkedin.com/in/showaib-sadi">  
+                    <i class="fab fa-linkedin        fa-3x"></i>
+                  </a>
+                  <a class="text-primary px-1"  target="_blank" href="https://twitter.com/sadimehedi">  
+                    <i class="fab fa-twitter-square  fa-3x"></i>
+                  </a>
+                </div>
+            </div>
+        </div>
+        <!-- start of form  -->
+
+   <div class="px-1">
+    <form id="contact-form">
+        <label >Name : </label>
+        <input type="text" name="userName" id="userName">
+        
+        <label > Email :</label>
+        <input type="email" name="email" id="email" >
+    
+        <label >message  </label>
+        <textarea class="text" name="message" id="message" cols="40" rows="10" id="message">
+        </textarea>
+    
+        
+            <button class="btn btn-primary mt-2 mx-auto text-center" id="submit" type="submit">Send message </button>
+        
+    </form>
+   </div>
+    
+    <!-- end of form  -->
+        
+
+
+    </section>
+    
+  
+
+     <!-- jQuery CDN - Slim version (=without AJAX) -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <!-- Popper.JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+     <!-- font awesome kit  -->
+     <script src="https://kit.fontawesome.com/ec0fbcc289.js" crossorigin="anonymous"></script>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+<!-- firebase  -->
+
+<script src="./dataFiles.js"></script>
+
+</body>
+</html>
